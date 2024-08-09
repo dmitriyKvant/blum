@@ -1,0 +1,10 @@
+model User {
+  id           String @id
+  username     String @unique
+  balance      Float
+  tickets      Int
+  accessToken  String
+  refreshToken String
+
+  @@map(name: "users")
+}

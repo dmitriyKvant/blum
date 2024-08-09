@@ -1,0 +1,29 @@
+name: Check code
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Lint code
+        run: yarn lint
+
+      - name: Cspell check code
+        run: yarn cspell-check

@@ -1,0 +1,8 @@
+* text=auto
+
+*.{tsx,ts,js,jsx,mjs,cjs} text eol=lf
+*.{json,yml,yaml} text eol=lf
+*.{md,txt} text eol=lf
+
+*.{jpg,png,ico} binary filter=lfs diff=lfs merge=lfs
+*.svg text filter=lfs diff=lfs merge=lfs eol=lf

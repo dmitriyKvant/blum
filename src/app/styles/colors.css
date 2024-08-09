@@ -1,0 +1,15 @@
+@tailwind base;
+
+@layer base {
+	:root {
+	}
+
+	.dark {
+		--white: hsl(210, 38%, 95%);
+
+		--gray: hsl(222, 25%, 10%);
+		--gray-600: hsl(219, 19%, 32%);
+		--gray-800: hsl(218, 23%, 18%);
+		--gray-950: hsl(225, 25%, 6%);
+	}
+}

@@ -1,0 +1,1 @@
+export { fontSans } from "./sans"

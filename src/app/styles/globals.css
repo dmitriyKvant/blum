@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	* {
+		@apply text-base outline-none;
+	}
+	*::selection {
+		/* @apply bg-transparent text-red opacity-10; */
+	}
+	*:focus-visible {
+		/* @apply outline-blue rounded-sm outline; */
+	}
+	img {
+		@apply select-none;
+	}
+}

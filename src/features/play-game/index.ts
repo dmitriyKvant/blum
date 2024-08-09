@@ -1,0 +1,1 @@
+export { playGame } from "./api"
